@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Deactivation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        #selectedItems {
+            margin-top: 20px;
+        }
+
+        #selectedTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #selectedTable th,
+        #selectedTable td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        #selectedTable th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="padding: 1px 0px 0px 20px; font: 14px Verdana;" class="ablink">Site deacivation application</p>
+    <div class="field2">
+        <fieldset style="width: 80%;">
+            <legend style="font-size: 15px; font-weight: 700;">
+                Site Deactivator
+            </legend>
+            <table style="width: 90%;">
+                <tr>
+                    <td style="width: 25%;">LSA</td>
+                    <td><select id="hub" style="width: 33.3%;">
+                            <option value="--Select--">--Select LSA--</option>
+                        </select></td>
+                </tr>
+                <tr style="height: 100px;">
+                    <td>Infra Provider</td>
+                    <td>
+                        <div class="checkbox-container">
+                            <form id="checkboxForm">
+                                <label><input type="checkbox" id="selectAllitem"> Select All</label><br>
+                                <label><input type="checkbox" name="item" value="Item 1"> Item 1</label><br>
+                                <label><input type="checkbox" name="item" value="Item 2"> Item 2</label><br>
+                                <label><input type="checkbox" name="item" value="Item 3"> Item 3</label><br>
+                                <label><input type="checkbox" name="item" value="Item 4"> Item 4</label><br>
+                            </form>
+
+                        </div>
+
+                    </td>
+                </tr>
+                <tr style="height: 100px;">
+                    <td style="position: absolute; top: 250px;">IP Site ID</td>
+                    <td><textarea rows="7" cols="25" style="position: relative; height: 100px; border-top: #00aeef 1px solid;"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div id="selectedItems">
+                <table id="selectedTable" border="1">
+                    <thead>
+                        <tr>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Selected items will be displayed here -->
+
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div style="padding-top: 20px;">
+                <button class="search" value="Search">Search</button>
+            </div>
+            <p id="selected-values"></p>
+        </fieldset>
+    </div>
+    <div style="padding: 10px 0px 2px 20px;">
+        <table style="width: 85%; color: white; height: 30px;">
+            <th style="background-color: #2995ca;"><input type="checkbox" name="chk"></th>
+            <th style="background-color: #2995ca;">Sno</th>
+            <th style="background-color: #2995ca;">TS Site ID</th>
+            <th style="background-color: #2995ca;">Infra Provider</th>
+            <th style="background-color: #2995ca;">IP Site ID</th>
+            <th style="background-color: #2995ca;">Site Type</th>
+            <th style="background-color: #2995ca;">Sharing Operator List</th>
+            <th style="background-color: #2995ca;">Sharing TSP List</th>
+            <th style="background-color: #2995ca;">Sharing TSP Site ID</th>
+            <th style="background-color: #2995ca;">Geography</th>
+            <th style="background-color: #2995ca;">Lat/Long</th>
+        </table>
+    </div>
+    <div>
+        <p style="color: red; font-size: 12px; position: relative; left: 650px;">
+            No record found...
+        </p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

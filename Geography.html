@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container-view">
+  <a href="#" class="alink">Show in Tree View</a>
+</div>
+<table class="table1">
+    <tr class="table-content1">
+      <td><label for="country">Country</label></td>
+      <td><label for="hub">Hub</label></td>
+      <td><label for="area">Area</label></td>
+      <td><label for="zone">Zone</label></td>
+      <td> <label for="smallarea">SmallArea</label></td>
+    </tr>
+    <tr>
+      <td><select id="country" style="width: 100%;">
+        <option value="India">India</option>
+        </select></td>
+      <td><select id="hub" style="width: 100%;">
+        <option value="--Select--">--Select--</option>
+        </select></td>
+      <td><select id="area" style="width: 100%;">
+        <option value="--Select--">--Select--</option>
+        </select></td>
+      <td><select id="zone" style="width: 100%;">
+        <option value="--Select--">--Select--</option>
+        </select></td>
+      <td><select id="smallarea" style="width: 100%;">
+        <option value="--Select--">--Select--</option>
+        </select></td>
+    </tr>
+</table>
+<table class="table2">
+    <tr><td style="width: 100px;"><label for="geotag">GeoTag:</label></td><td><input type="text" id="geotag" value="1" disabled></td></tr>
+    <tr><td><label for="level">Level:</label></td><td><input type="text" id="level" value="Country" disabled></td></tr>
+    <tr><td><label for="name">Name:</label></td><td><input class="newpropertyadd" style="width: 98%;" type="text" id="name" value="India"></td></tr>
+</table>
+<div>
+    <button class="save" value="Save">Save</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div style="padding: 15px 0px 0px 10px;">
+  <table class="table3">
+    <tr style="background-color: #7aa5cd; color: white;">
+      <th style="width: 3.5%;"><input type="checkbox" onclick="selects()"></th>
+      <th>Id</th>
+      <th colspan="3">Name</th>
+      <th colspan="2">Code</th>
+      <th colspan="2">Description</th>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td style="width: 2.5%;">1</td>
+      <td style="width: 8%;"></td>
+      <td style="width: 20%;">Site Layout</td>
+      <td style="width: 8%;"></td>
+      <td style="width: 11%;">SLAYOUT</td>
+      <td style="width: 9%;"></td>
+      <td style="width: 21%;">Site Layout</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>2</td>
+      <td></td>
+      <td>Building Layout</td>
+      <td></td>
+      <td>BPA</td>
+      <td></td>
+      <td>Building Layout</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>3</td>
+      <td></td>
+      <td>Picture Pack</td>
+      <td></td>
+      <td>PP</td>
+      <td></td>
+      <td>Picture Pack</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>4</td>
+      <td></td>
+      <td>Legacy Document</td>
+      <td></td>
+      <td>LEGDOC</td>
+      <td></td>
+      <td>Legacy Document</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>5</td>
+      <td></td>
+      <td>Legacy BB Document</td>
+      <td></td>
+      <td>LEGBBDOC</td>
+      <td></td>
+      <td>Legacy BB Document</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>6</td>
+      <td></td>
+      <td>Legacy NB Document</td>
+      <td></td>
+      <td>LEGNBDOC</td>
+      <td></td>
+      <td>Legacy NB Document</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>7</td>
+      <td></td>
+      <td>OSSSnapShot</td>
+      <td></td>
+      <td>OSS</td>
+      <td></td>
+      <td>OSSSnapShot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>8</td>
+      <td></td>
+      <td>Self-Certificate</td>
+      <td></td>
+      <td>SC</td>
+      <td></td>
+      <td>Self-Certificate</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>9</td>
+      <td></td>
+      <td>Withdrawn Certificate</td>
+      <td></td>
+      <td>WDC</td>
+      <td></td>
+      <td>Withdrawn Certificate</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>10</td>
+      <td></td>
+      <td>OTS Certificate</td>
+      <td></td>
+      <td>OTSC</td>
+      <td></td>
+      <td>OTS Certificate</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>11</td>
+      <td></td>
+      <td>Legacy SP Self-Certificate</td>
+      <td></td>
+      <td>LSPSC</td>
+      <td></td>
+      <td>Legacy SP Self-Certificate</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="chk"></td>
+      <td>12</td>
+      <td></td>
+      <td>TermCertificate</td>
+      <td></td>
+      <td>TRMC</td>
+      <td></td>
+      <td>TermCertificate</td>
+      <td></td>
+    </tr>
+  </table>
+
+  <br>
+
+  <div style="padding: 1px; padding-top: 1px;">
+    <button class="dobtn">Add Label</button>
+    <button class="dobtn">Save</button>
+    <button class="dobtn">Delete</button>
+  </div>
+
+</div>
+
+  <script>
+    function selects() {
+      var ele = document.getElementsByName('chk');
+      for (var i = 0; i < ele.length; i++) {
+        if (ele[i].type == 'checkbox')
+          ele[i].checked = true;
+      }
+    }           
+  </script>
+
+</body>
+
+</html>
